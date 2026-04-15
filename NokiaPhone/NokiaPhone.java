@@ -868,6 +868,7 @@ public class NokiaPhoneDemo {
                             if (subSubMenuChoice == 0) {
                                 menuType = 'B';
                             }
+                           
                             break;
                         case 6:
                             System.out.println("\nAuto update of date and time");
