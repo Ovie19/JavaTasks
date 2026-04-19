@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Factors {
+public class ReverseDigit {
 
     public static void main(String[] args) {
 
