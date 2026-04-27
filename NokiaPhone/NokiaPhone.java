@@ -26,15 +26,15 @@ public class NokiaPhoneDemo {
         String settingsMenu = "1. Call settings\n2. Phone settings\n3. Security settings\n4. Restore factory settings";
         String clockMenu = "1. Alarm clock\n2. Clock settings\n3. Date setting\n4. Stopwatch\n" +
                            "5. Countdown timer\n6. Auto update of date and time";
-                      
+
         while(!exit) {
             if (menuType == 'A') {
                 System.out.println("\nNokia 3310 Menu");
                 System.out.println("1. Phone book\n2. Messages\n3. Chat");
                 System.out.println("4. Call register\n5. Tones\n6. Settings");
                 System.out.println("7. Call divert\n8. Games\n9. Calculator");
-                System.out.println("10. Reminder\n11. Clock\n12. Profiles");        
-                System.out.print("13. SIM services\n\n0. Exit\nEnter choice: ");
+                System.out.println("10. Reminder\n11. Clock\n12. Profiles");
+                System.out.print("13. SIM services\n0. Exit\nEnter choice: ");
                 menuChoice = inputCollector.nextInt();
                 if (menuChoice == 0) {
                     exit = true;
@@ -64,7 +64,7 @@ public class NokiaPhoneDemo {
                         if (subMenuChoice == 0) {
                             menuType = 'A';
                         } else {menuType = 'C';}
-                        break;   
+                        break;
                     case 3:
                         System.out.println("\nChat");
                         System.out.println("0. Return to menu");
@@ -73,7 +73,7 @@ public class NokiaPhoneDemo {
                         if (subMenuChoice == 0) {
                             menuType = 'A';
                         }
-                        break;      
+                        break;
                     case 4:
                         System.out.println("\nCall register");
                         System.out.println(callRegisterMenu);
@@ -85,7 +85,7 @@ public class NokiaPhoneDemo {
                         } else {
                             menuType = 'C';
                         }
-                        break;      
+                        break;
                     case 5:
                         System.out.println("\nTones");
                         System.out.println(tonesMenu);
@@ -97,7 +97,7 @@ public class NokiaPhoneDemo {
                         } else {
                             menuType = 'C';
                         }
-                        break;      
+                        break;
                     case 6:
                         System.out.println("\nSettings");
                         System.out.println(settingsMenu);
@@ -109,7 +109,7 @@ public class NokiaPhoneDemo {
                         } else {
                             menuType = 'C';
                         }
-                        break;   
+                        break;
                     case 7:
                         System.out.println("\nCall divert");
                         System.out.println("0. Return to menu");
@@ -117,8 +117,8 @@ public class NokiaPhoneDemo {
                         subMenuChoice = inputCollector.nextInt();
                         if (subMenuChoice == 0) {
                             menuType = 'A';
-                        } 
-                        break;   
+                        }
+                        break;
                     case 8:
                         System.out.println("\nGames");
                         System.out.println("0. Return to menu");
@@ -127,7 +127,7 @@ public class NokiaPhoneDemo {
                         if (subMenuChoice == 0) {
                             menuType = 'A';
                         }
-                        break;    
+                        break;
                     case 9:
                         System.out.println("\nCalculator");
                         System.out.println("0. Return to menu");
@@ -136,7 +136,7 @@ public class NokiaPhoneDemo {
                         if (subMenuChoice == 0) {
                             menuType = 'A';
                         }
-                        break;     
+                        break;
                     case 10:
                         System.out.println("\nReminder");
                         System.out.println("0. Return to menu");
@@ -145,7 +145,7 @@ public class NokiaPhoneDemo {
                         if (subMenuChoice == 0) {
                             menuType = 'A';
                         }
-                        break;     
+                        break;
                     case 11:
                         System.out.println("\nClock");
                         System.out.println(clockMenu);
@@ -157,7 +157,7 @@ public class NokiaPhoneDemo {
                         } else {
                             menuType = 'C';
                         }
-                        break;        
+                        break;
                     case 12:
                         System.out.println("\nProfiles");
                         System.out.println("0. Return to menu");
@@ -166,7 +166,7 @@ public class NokiaPhoneDemo {
                         if (subMenuChoice == 0) {
                             menuType = 'A';
                         }
-                        break;     
+                        break;
                     case 13:
                         System.out.println("\nSIM services");
                         System.out.println("0. Return to menu");
@@ -175,7 +175,7 @@ public class NokiaPhoneDemo {
                         if (subMenuChoice == 0) {
                             menuType = 'A';
                         }
-                        break;      
+                        break;
                 }
             }
 
@@ -256,10 +256,10 @@ public class NokiaPhoneDemo {
                             if (subSubMenuChoice == 0) {
                                 menuType = 'B';
                             } else {
-                                if (subSubMenuChoice == 1) { 
+                                if (subSubMenuChoice == 1) {
                                     System.out.println("\nType of view");
                                 }
-                                if (subSubMenuChoice == 2) { 
+                                if (subSubMenuChoice == 2) {
                                     System.out.println("\nMemory status");
                                 }
                                 System.out.print("Enter 0 to go back: ");
@@ -353,10 +353,10 @@ public class NokiaPhoneDemo {
                             if (subSubMenuChoice == 0) {
                                 menuType = 'B';
                             }else {
-                                if (subSubMenuChoice == 1) { 
+                                if (subSubMenuChoice == 1) {
                                     System.out.println("\nSet 1");
                                 }
-                                if (subSubMenuChoice == 2) { 
+                                if (subSubMenuChoice == 2) {
                                     System.out.println("\nCommon");
                                 }
                                 System.out.print("Enter 0 to go back: ");
@@ -370,7 +370,7 @@ public class NokiaPhoneDemo {
                             subSubMenuChoice = inputCollector.nextInt();
                             if (subSubMenuChoice == 0) {
                                 menuType = 'B';
-                            } 
+                            }
                             break;
                         case 9:
                             System.out.println("\nVoice mailbox number");
@@ -442,19 +442,19 @@ public class NokiaPhoneDemo {
                             if (subSubMenuChoice == 0) {
                                 menuType = 'B';
                             } else {
-                                if (subSubMenuChoice == 1) { 
+                                if (subSubMenuChoice == 1) {
                                     System.out.println("\nLast call duration");
                                 }
-                                if (subSubMenuChoice == 2) { 
+                                if (subSubMenuChoice == 2) {
                                     System.out.println("\nAll calls' duration");
                                 }
-                                if (subSubMenuChoice == 3) { 
+                                if (subSubMenuChoice == 3) {
                                     System.out.println("\nReceived calls' duration");
                                 }
-                                if (subSubMenuChoice == 4) { 
+                                if (subSubMenuChoice == 4) {
                                     System.out.println("\nDialled calls' duration");
                                 }
-                                if (subSubMenuChoice == 5) { 
+                                if (subSubMenuChoice == 5) {
                                     System.out.println("\nClear timers");
                                 }
                                 System.out.print("Enter 0 to go back: ");
@@ -470,13 +470,13 @@ public class NokiaPhoneDemo {
                             if (subSubMenuChoice == 0) {
                                 menuType = 'B';
                             } else {
-                                if (subSubMenuChoice == 1) { 
+                                if (subSubMenuChoice == 1) {
                                     System.out.println("\nLast call cost");
                                 }
-                                if (subSubMenuChoice == 2) { 
+                                if (subSubMenuChoice == 2) {
                                     System.out.println("\nAll calls' cost");
                                 }
-                                if (subSubMenuChoice == 3) { 
+                                if (subSubMenuChoice == 3) {
                                     System.out.println("\nClear counters");
                                 }
                                 System.out.print("Enter 0 to go back: ");
@@ -492,10 +492,10 @@ public class NokiaPhoneDemo {
                             if (subSubMenuChoice == 0) {
                                 menuType = 'B';
                             } else {
-                                if (subSubMenuChoice == 1) { 
+                                if (subSubMenuChoice == 1) {
                                     System.out.println("\nCall cost limit");
                                 }
-                                if (subSubMenuChoice == 2) { 
+                                if (subSubMenuChoice == 2) {
                                     System.out.println("\nShow costs in");
                                 }
                                 System.out.print("Enter 0 to go back: ");
@@ -511,9 +511,9 @@ public class NokiaPhoneDemo {
                                 menuType = 'B';
                             }
                             break;
-                    }                    
+                    }
                 }
-    
+
                 // TONES
                 if (menuChoice == 5) {
                     switch(subMenuChoice) {
@@ -598,7 +598,7 @@ public class NokiaPhoneDemo {
                                 menuType = 'B';
                             }
                             break;
-                    }                    
+                    }
                 }
 
                 // SETTINGS
@@ -614,22 +614,22 @@ public class NokiaPhoneDemo {
                             if (subSubMenuChoice == 0) {
                                 menuType = 'B';
                             } else {
-                                if (subSubMenuChoice == 1) { 
+                                if (subSubMenuChoice == 1) {
                                     System.out.println("\nAutomatic redial");
                                 }
-                                if (subSubMenuChoice == 2) { 
+                                if (subSubMenuChoice == 2) {
                                     System.out.println("\nSpeed dialling");
                                 }
-                                if (subSubMenuChoice == 3) { 
+                                if (subSubMenuChoice == 3) {
                                     System.out.println("\nCall waiting options");
                                 }
-                                if (subSubMenuChoice == 4) { 
+                                if (subSubMenuChoice == 4) {
                                     System.out.println("\nOwn number sending");
                                 }
-                                if (subSubMenuChoice == 5) { 
+                                if (subSubMenuChoice == 5) {
                                     System.out.println("\nPhone line in use");
                                 }
-                                if (subSubMenuChoice == 6) { 
+                                if (subSubMenuChoice == 6) {
                                     System.out.println("\nAutomatic answer");
                                 }
                                 System.out.print("Enter 0 to go back: ");
@@ -646,22 +646,22 @@ public class NokiaPhoneDemo {
                             if (subSubMenuChoice == 0) {
                                 menuType = 'B';
                             } else {
-                                if (subSubMenuChoice == 1) { 
+                                if (subSubMenuChoice == 1) {
                                     System.out.println("\nLanguage");
                                 }
-                                if (subSubMenuChoice == 2) { 
+                                if (subSubMenuChoice == 2) {
                                     System.out.println("\nCell info display");
                                 }
-                                if (subSubMenuChoice == 3) { 
+                                if (subSubMenuChoice == 3) {
                                     System.out.println("\nWelcome note");
                                 }
-                                if (subSubMenuChoice == 4) { 
+                                if (subSubMenuChoice == 4) {
                                     System.out.println("\nNetwork selection");
                                 }
-                                if (subSubMenuChoice == 5) { 
+                                if (subSubMenuChoice == 5) {
                                     System.out.println("\nLights");
                                 }
-                                if (subSubMenuChoice == 6) { 
+                                if (subSubMenuChoice == 6) {
                                     System.out.println("\nConfirm SIM service actions");
                                 }
                                 System.out.print("Enter 0 to go back: ");
@@ -678,22 +678,22 @@ public class NokiaPhoneDemo {
                             if (subSubMenuChoice == 0) {
                                 menuType = 'B';
                             } else {
-                                if (subSubMenuChoice == 1) { 
+                                if (subSubMenuChoice == 1) {
                                     System.out.println("\nPIN code request");
                                 }
-                                if (subSubMenuChoice == 2) { 
+                                if (subSubMenuChoice == 2) {
                                     System.out.println("\nCall barring service");
                                 }
-                                if (subSubMenuChoice == 3) { 
+                                if (subSubMenuChoice == 3) {
                                     System.out.println("\nFixed dialling");
                                 }
-                                if (subSubMenuChoice == 4) { 
+                                if (subSubMenuChoice == 4) {
                                     System.out.println("\nClosed user group");
                                 }
-                                if (subSubMenuChoice == 5) { 
+                                if (subSubMenuChoice == 5) {
                                     System.out.println("\nPhone security");
                                 }
-                                if (subSubMenuChoice == 6) { 
+                                if (subSubMenuChoice == 6) {
                                     System.out.println("\nChange access codes");
                                 }
                                 System.out.print("Enter 0 to go back: ");
@@ -709,118 +709,118 @@ public class NokiaPhoneDemo {
                                 menuType = 'B';
                             }
                             break;
-                    }                    
+                    }
                 }
-                if (menuChoice == 6) {
-                    switch(subMenuChoice) {
-                        case 1:
-                            System.out.println("\nCall settings");
-                            System.out.println("1. Automatic redial\n2. Speed dialling\n3. Call waiting options");
-                            System.out.println("4. Own number sending\n5. Phone line in use\n6. Automatic answer");
-                            System.out.println("0. Return to menu");
-                            System.out.print("Enter choice: ");
-                            subSubMenuChoice = inputCollector.nextInt();
-                            if (subSubMenuChoice == 0) {
-                                menuType = 'B';
-                            } else {
-                                if (subSubMenuChoice == 1) { 
-                                    System.out.println("\nAutomatic redial");
-                                }
-                                if (subSubMenuChoice == 2) { 
-                                    System.out.println("\nSpeed dialling");
-                                }
-                                if (subSubMenuChoice == 3) { 
-                                    System.out.println("\nCall waiting options");
-                                }
-                                if (subSubMenuChoice == 4) { 
-                                    System.out.println("\nOwn number sending");
-                                }
-                                if (subSubMenuChoice == 5) { 
-                                    System.out.println("\nPhone line in use");
-                                }
-                                if (subSubMenuChoice == 6) { 
-                                    System.out.println("\nAutomatic answer");
-                                }
-                                System.out.print("Enter 0 to go back: ");
-                                subSubMenuChoice = inputCollector.nextInt();
-                            }
-                            break;
-                        case 2:
-                            System.out.println("\nPhone settings");
-                            System.out.println("1. Language\n2. Cell info display\n3. Welcome note");
-                            System.out.println("4. Network selection\n5. Lights\n6. Confirm SIM service actions");
-                            System.out.println("0. Return to menu");
-                            System.out.print("Enter choice: ");
-                            subSubMenuChoice = inputCollector.nextInt();
-                            if (subSubMenuChoice == 0) {
-                                menuType = 'B';
-                            } else {
-                                if (subSubMenuChoice == 1) { 
-                                    System.out.println("\nLanguage");
-                                }
-                                if (subSubMenuChoice == 2) { 
-                                    System.out.println("\nCell info display");
-                                }
-                                if (subSubMenuChoice == 3) { 
-                                    System.out.println("\nWelcome note");
-                                }
-                                if (subSubMenuChoice == 4) { 
-                                    System.out.println("\nNetwork selection");
-                                }
-                                if (subSubMenuChoice == 5) { 
-                                    System.out.println("\nLights");
-                                }
-                                if (subSubMenuChoice == 6) { 
-                                    System.out.println("\nConfirm SIM service actions");
-                                }
-                                System.out.print("Enter 0 to go back: ");
-                                subSubMenuChoice = inputCollector.nextInt();
-                            }
-                            break;
-                        case 3:
-                            System.out.println("\nSecurity settings");
-                            System.out.println("1. PIN code request\n2. Call barring service\n3. Fixed dialling");
-                            System.out.println("4. Closed user group\n5. Phone security\n6. Change access codes");
-                            System.out.println("0. Return to menu");
-                            System.out.print("Enter choice: ");
-                            subSubMenuChoice = inputCollector.nextInt();
-                            if (subSubMenuChoice == 0) {
-                                menuType = 'B';
-                            } else {
-                                if (subSubMenuChoice == 1) { 
-                                    System.out.println("\nPIN code request");
-                                }
-                                if (subSubMenuChoice == 2) { 
-                                    System.out.println("\nCall barring service");
-                                }
-                                if (subSubMenuChoice == 3) { 
-                                    System.out.println("\nFixed dialling");
-                                }
-                                if (subSubMenuChoice == 4) { 
-                                    System.out.println("\nClosed user group");
-                                }
-                                if (subSubMenuChoice == 5) { 
-                                    System.out.println("\nPhone security");
-                                }
-                                if (subSubMenuChoice == 6) { 
-                                    System.out.println("\nChange access codes");
-                                }
-                                System.out.print("Enter 0 to go back: ");
-                                subSubMenuChoice = inputCollector.nextInt();
-                            }
-                            break;
-                        case 4:
-                            System.out.println("\nRestore factory settings");
-                            System.out.println("0. Return to menu");
-                            System.out.print("Enter choice: ");
-                            subSubMenuChoice = inputCollector.nextInt();
-                            if (subSubMenuChoice == 0) {
-                                menuType = 'B';
-                            }
-                            break;
-                    }                    
-                }
-                
+//                if (menuChoice == 6) {
+//                    switch(subMenuChoice) {
+//                        case 1:
+//                            System.out.println("\nCall settings");
+//                            System.out.println("1. Automatic redial\n2. Speed dialling\n3. Call waiting options");
+//                            System.out.println("4. Own number sending\n5. Phone line in use\n6. Automatic answer");
+//                            System.out.println("0. Return to menu");
+//                            System.out.print("Enter choice: ");
+//                            subSubMenuChoice = inputCollector.nextInt();
+//                            if (subSubMenuChoice == 0) {
+//                                menuType = 'B';
+//                            } else {
+//                                if (subSubMenuChoice == 1) {
+//                                    System.out.println("\nAutomatic redial");
+//                                }
+//                                if (subSubMenuChoice == 2) {
+//                                    System.out.println("\nSpeed dialling");
+//                                }
+//                                if (subSubMenuChoice == 3) {
+//                                    System.out.println("\nCall waiting options");
+//                                }
+//                                if (subSubMenuChoice == 4) {
+//                                    System.out.println("\nOwn number sending");
+//                                }
+//                                if (subSubMenuChoice == 5) {
+//                                    System.out.println("\nPhone line in use");
+//                                }
+//                                if (subSubMenuChoice == 6) {
+//                                    System.out.println("\nAutomatic answer");
+//                                }
+//                                System.out.print("Enter 0 to go back: ");
+//                                subSubMenuChoice = inputCollector.nextInt();
+//                            }
+//                            break;
+//                        case 2:
+//                            System.out.println("\nPhone settings");
+//                            System.out.println("1. Language\n2. Cell info display\n3. Welcome note");
+//                            System.out.println("4. Network selection\n5. Lights\n6. Confirm SIM service actions");
+//                            System.out.println("0. Return to menu");
+//                            System.out.print("Enter choice: ");
+//                            subSubMenuChoice = inputCollector.nextInt();
+//                            if (subSubMenuChoice == 0) {
+//                                menuType = 'B';
+//                            } else {
+//                                if (subSubMenuChoice == 1) {
+//                                    System.out.println("\nLanguage");
+//                                }
+//                                if (subSubMenuChoice == 2) {
+//                                    System.out.println("\nCell info display");
+//                                }
+//                                if (subSubMenuChoice == 3) {
+//                                    System.out.println("\nWelcome note");
+//                                }
+//                                if (subSubMenuChoice == 4) {
+//                                    System.out.println("\nNetwork selection");
+//                                }
+//                                if (subSubMenuChoice == 5) {
+//                                    System.out.println("\nLights");
+//                                }
+//                                if (subSubMenuChoice == 6) {
+//                                    System.out.println("\nConfirm SIM service actions");
+//                                }
+//                                System.out.print("Enter 0 to go back: ");
+//                                subSubMenuChoice = inputCollector.nextInt();
+//                            }
+//                            break;
+//                        case 3:
+//                            System.out.println("\nSecurity settings");
+//                            System.out.println("1. PIN code request\n2. Call barring service\n3. Fixed dialling");
+//                            System.out.println("4. Closed user group\n5. Phone security\n6. Change access codes");
+//                            System.out.println("0. Return to menu");
+//                            System.out.print("Enter choice: ");
+//                            subSubMenuChoice = inputCollector.nextInt();
+//                            if (subSubMenuChoice == 0) {
+//                                menuType = 'B';
+//                            } else {
+//                                if (subSubMenuChoice == 1) {
+//                                    System.out.println("\nPIN code request");
+//                                }
+//                                if (subSubMenuChoice == 2) {
+//                                    System.out.println("\nCall barring service");
+//                                }
+//                                if (subSubMenuChoice == 3) {
+//                                    System.out.println("\nFixed dialling");
+//                                }
+//                                if (subSubMenuChoice == 4) {
+//                                    System.out.println("\nClosed user group");
+//                                }
+//                                if (subSubMenuChoice == 5) {
+//                                    System.out.println("\nPhone security");
+//                                }
+//                                if (subSubMenuChoice == 6) {
+//                                    System.out.println("\nChange access codes");
+//                                }
+//                                System.out.print("Enter 0 to go back: ");
+//                                subSubMenuChoice = inputCollector.nextInt();
+//                            }
+//                            break;
+//                        case 4:
+//                            System.out.println("\nRestore factory settings");
+//                            System.out.println("0. Return to menu");
+//                            System.out.print("Enter choice: ");
+//                            subSubMenuChoice = inputCollector.nextInt();
+//                            if (subSubMenuChoice == 0) {
+//                                menuType = 'B';
+//                            }
+//                            break;
+//                    }
+//                }
+//
                 // CLOCK
                 if (menuChoice == 11) {
                     switch(subMenuChoice) {
@@ -868,7 +868,7 @@ public class NokiaPhoneDemo {
                             if (subSubMenuChoice == 0) {
                                 menuType = 'B';
                             }
-                           
+
                             break;
                         case 6:
                             System.out.println("\nAuto update of date and time");
@@ -879,7 +879,7 @@ public class NokiaPhoneDemo {
                                 menuType = 'B';
                             }
                             break;
-                    }                    
+                    }
                 }
             }
         }
