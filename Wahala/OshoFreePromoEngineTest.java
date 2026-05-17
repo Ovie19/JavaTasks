@@ -140,7 +140,6 @@ public class OshoFreePromoEngineTest {
         assertEquals(cartTotal, expectedPrice, 0.001);
     }
 
-
     @Test
     public void testThat() {
         double cartTotal = -18_000.00;

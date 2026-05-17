@@ -32,6 +32,9 @@ public class ArraySnacks {
 
         newArray = concatenateAlternatively(firstArray, secondArray);
         System.out.println("Alternative Array => " + Arrays.toString(newArray));
+
+        newArray = getArrayOfItsDigits(2342);
+        System.out.println("2342 => " + Arrays.toString(newArray));
     }
 
     public static int getLargest(int[] numbers) {
@@ -153,5 +156,17 @@ public class ArraySnacks {
         }
 
         return newArray;
+    }
+
+    public static int[] getArrayOfItsDigits(int number) {
+        int length = String.valueOf(number).length();
+        int[] numbers = new int[length];
+
+        for(int index = length - 1; index >= 0; index--) {
+            numbers[index] = number % 10;
+            number /= 10;
+        }
+
+        return numbers;
     }
 }
